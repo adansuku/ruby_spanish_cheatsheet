@@ -1,0 +1,25 @@
+arr = [1, 2, 3, 4, 5]
+
+puts arr.length         # => 5 (cantidad de elementos)
+puts arr.empty?         # => false (si el array está vacío)
+puts arr.include?(3)    # => true (si el array contiene el valor 3)
+arr.push(6)             # => [1, 2, 3, 4, 5, 6] (añadir al final)
+arr.unshift(0)          # => [0, 1, 2, 3, 4, 5, 6] (añadir al inicio)
+puts arr.pop            # => 6 (elimina y devuelve el último elemento)
+puts arr.shift          # => 0 (elimina y devuelve el primer elemento)
+arr.delete(3)           # => [1, 2, 4, 5] (elimina el valor 3)
+arr.delete_at(2)        # => [1, 2, 5] (elimina elemento en índice 2)
+puts arr.compact        # => [1, 2, 5] (elimina valores nil)
+puts arr.uniq           # => [1, 2, 5] (elimina duplicados)
+puts arr.sort           # => [1, 2, 5] (ordena los elementos)
+puts arr.reverse        # => [5, 2, 1] (invierte el array)
+puts arr.join(", ")     # => "1, 2, 5" (convierte en string)
+puts arr.map { |x| x * 2 }  # => [2, 4, 10] (aplica operación)
+puts arr.select { |x| x.even? }  # => [2] (filtra pares)
+puts arr.reject { |x| x.odd? }   # => [2] (rechaza impares)
+puts arr.reduce(:+)     # => 8 (suma de los elementos)
+puts arr.find { |x| x > 3 }  # => 5 (primer valor mayor a 3)
+puts arr.all? { |x| x > 0 }  # => true (todos mayores que 0)
+puts arr.any? { |x| x > 4 }  # => true (al menos uno mayor a 4)
+arr.each { |x| puts x }      # Itera sobre cada elemento
+arr.each_with_index { |x, i| puts "#{i}: #{x}" }  # Itera con índice
