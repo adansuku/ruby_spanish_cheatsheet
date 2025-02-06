@@ -1,0 +1,19 @@
+num = 42
+
+puts num.odd?          # => false (devuelve true si es impar)
+puts num.even?         # => true (devuelve true si es par)
+puts num.abs           # => 42 (valor absoluto)
+puts num.next          # => 43 (siguiente número)
+puts num.pred          # => 41 (número anterior)
+puts num.zero?         # => false (devuelve true si es 0)
+puts num.positive?     # => true (devuelve true si es positivo)
+puts num.negative?     # => false (devuelve true si es negativo)
+puts num.to_s          # => "42" (convierte en string)
+puts num.to_f          # => 42.0 (convierte en float)
+puts num.to_i          # => 42 (convierte a entero)
+puts num.digits        # => [2, 4] (array con los dígitos)
+puts num.gcd(14)       # => 14 (máximo común divisor)
+puts num.lcm(14)       # => 42 (mínimo común múltiplo)
+puts Math.sqrt(num)    # => 6.48 (raíz cuadrada)
+puts Math.log(num)     # => 3.74 (logaritmo natural)
+puts rand(1..100)      # => número aleatorio entre 1 y 100
